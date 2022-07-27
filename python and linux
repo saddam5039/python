@@ -1,0 +1,35 @@
+python3 is installed in ubuntu linux by default
+#check ubuntu version
+lsb_release -a
+#sudo update
+sudo apt update
+
+#command for pip install
+sudo apt install python3-pip
+#pip3 version
+pip3 --version
+pip3 --help
+pip3 install --help
+To install the latest version of the package you need to run the following command:
+pip3 install scrapy
+To install a specific version of the package you would issue the following command:
+pip3 install scrapy==1.5
+#To list all the installed pip packages use the command below:
+pip3 list
+
+#commands for jupyter nootebook install (video link: https://www.youtube.com/watch?v=Yg9AkozItTU) 
+sudo apt-get install ipython3 (#noted ipython)
+pip3 install jupyter
+sudo apt install jupyter-notebook
+#try launching via 
+jupyter-notebook
+
+
+#commands for jupyter notebook install using a virtual environment (pip3 have to be get installed & follow these commands sequallly)
+sudo -H pip3 install virtualenv
+mkdir jupyter
+cd jupyter
+virtualenv environment
+source environment/bin/activate
+pip install jupyter
+jupyter notebook (#to launch)
